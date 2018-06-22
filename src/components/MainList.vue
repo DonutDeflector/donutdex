@@ -18,7 +18,7 @@ const Pokedex = require("pokeapi-js-wrapper");
 const options = {
   protocol: "https"
 };
-const P = new Pokedex.Pokedex();
+const P = new Pokedex.Pokedex(options);
 
 export default {
   name: "MainList",
