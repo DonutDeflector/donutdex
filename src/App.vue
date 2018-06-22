@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <router-view name="header"/>
     <router-view/>
   </div>
 </template>
@@ -12,5 +13,8 @@ export default {
 
 <style>
 #app {
+  max-width: 960px;
+  padding: 10px;
+  margin: 0 auto;
 }
 </style>

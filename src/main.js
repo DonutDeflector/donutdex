@@ -9,7 +9,10 @@ import "./assets/css/donutdex.css";
 
 import VueLazyload from "vue-lazyload";
 
-Vue.use(VueLazyload);
+Vue.use(VueLazyload, {
+  loading:
+    "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png"
+});
 
 Vue.config.productionTip = false;
 

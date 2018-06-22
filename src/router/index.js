@@ -1,5 +1,6 @@
 import Vue from "vue";
 import Router from "vue-router";
+import Header from "@/components/Header";
 import MainList from "@/components/MainList";
 
 Vue.use(Router);
@@ -9,7 +10,10 @@ export default new Router({
     {
       path: "/",
       name: "MainList",
-      component: MainList
+      components: {
+        header: Header,
+        default: MainList
+      }
     }
   ]
 });
